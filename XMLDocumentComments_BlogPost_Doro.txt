@@ -1,0 +1,52 @@
+Dorothy Hunt
+Week 9 - Creating an assembly (library - DLL).
+XML Documentation Comments
+
+Ever notice how little comments appear when your cursor rests inside the parentheses of something like 
+Console.WriteLine(|)...?
+
+Those comments are called (or considered) XML Documentation comments. These comments will give a brief 
+summary or description about that particular method.
+
+How do we add these cool comments, also called ToolTip?
+
+This is how I added the comments (thanks Google!):
+
+1. I created a Class Library project in Visual Studios.
+2. Created my little library. Example = adding classes, methods, etc...
+3. Under the Project tab in VS, I clicked on the properties command.
+4. From within the properties menu, I clicked on the Build settings.
+5. Within the Build settings, I checked in the XML Document File box. Close out of the properties menu.
+
+Now time to make some comments!
+
+1. On the line right above the beginning of your method, start your XML (ToolTip) comment with 3 /. (///).
+2. Once you do this, type in <summary>. Example = ///<summary>
+3. In the next line you can write the description of your method. Example = ///Description
+4. You can close out your summary with </summary>. Example ///</summary>
+
+So overall your ToolTip comments can look like this:
+
+
+	///<summary>
+	///This method takes 2 integers and adds them together
+	///</summary>
+
+public static void Add(int x, int y)
+        {
+            int sum = x + y;
+            Console.WriteLine("Your sum is " + sum);
+        }
+
+After you Build your solution and use your library from a Console Application program (don't forget to reference
+your library), you will see your comment appear when your cursor rests inside ClassName.Add(|)...
+
+Quick tip (use Add method parameter x for example below): 
+
+///<param name="x">Parameter description</param>
+
+Will explain what the parameter is/does (if you choose to do so).
+
+The end! Hope this helps!
+
+Dorothy

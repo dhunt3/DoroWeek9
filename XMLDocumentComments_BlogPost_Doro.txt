@@ -12,7 +12,7 @@ How do we add these cool comments, also called ToolTip?
 
 This is how I added the comments (thanks Google!):
 
-1. I created a Class Library project in Visual Studios.
+1. I created a Class Library project in Visual Studio.
 2. Created my little library. Example = adding classes, methods, etc...
 3. Under the Project tab in VS, I clicked on the properties command.
 4. From within the properties menu, I clicked on the Build settings.
